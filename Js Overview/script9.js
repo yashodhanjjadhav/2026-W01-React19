@@ -10,7 +10,13 @@ let employees = {
     ]
 };
 
-//Q1. print last 3 skills of employees
-let _skills = employees.skills;
+//Q1. print last 3 skills of employees  ... is read as spread operator used to
+// copy array
+let _skills = [...employees.skills];
+_skills[0]="A";
+_skills[1]="B";
+_skills[2]="D";
+_skills[3]="E";
 
-console.log(_skills);
+console.log(employees.skills);
+
